@@ -833,6 +833,7 @@ a {
   inset: 0;
   transform-origin: 50% 42%;
   pointer-events: none;
+  will-change: transform;
 }
 
 /* The G0 frame (2752 × 1536) under `object-fit: cover`; layers are placed in its percentages. */
