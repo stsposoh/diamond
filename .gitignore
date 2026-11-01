@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.DS_Store
+.playwright-mcp/
+
+# Flow originals stay local; the site ships the web derivatives in photos/web and videos/scrub, videos/stills.
+/assets/photos/*.jpg
+/assets/videos/*.mp4
+
+# AI tooling: agents, skills, rules, design-tool state
+.claude/
+.cursor/
+.cursorignore
+.impeccable/
+AGENTS.md
+CLAUDE.md

@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Supreme';
+  src: url('../fonts/Supreme-Variable.woff2') format('woff2');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Cool plaster sampled from the hero room; the stone's dispersion is the only colour. */
+  --plaster: #eceef1;
+  --plaster-lit: #f6f7f9;
+  --plaster-shade: #c6cdd5;
+  --ink: #14171b;
+  --steel: #49515a;
+  --hairline: rgb(20 23 27 / 0.14);
+  --hairline-strong: rgb(20 23 27 / 0.32);
+
+  --fire-red: #ff5a6a;
+  --fire-amber: #ffb347;
+  --fire-yellow: #f2ea6b;
+  --fire-green: #6fe3a8;
+  --fire-cyan: #58cdf7;
+  --fire-violet: #9a7cff;
+  --spectrum: linear-gradient(90deg, var(--fire-red), var(--fire-amber), var(--fire-yellow), var(--fire-green), var(--fire-cyan), var(--fire-violet));
+
+  --font: 'Supreme', ui-sans-serif, system-ui, sans-serif;
+
+  --text-label: 0.75rem;
+  --text-small: 0.875rem;
+  --text-body: clamp(1rem, 0.94rem + 0.2vw, 1.125rem);
+  --text-lead: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --text-title: clamp(2.5rem, 1.6rem + 3vw, 4.5rem);
+  --text-display: clamp(3.25rem, 1.5rem + 5.6vw, 6rem);
+
+  --weight-display: 200;
+  --weight-body: 380;
+  --weight-label: 520;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --space-7: 6.5rem;
+  --space-8: 10rem;
+
+  --gutter: clamp(1.25rem, 0.6rem + 2.6vw, 3rem);
+  --scale-width: clamp(0px, -2rem + 10vw, 8.5rem);
+  --nav-height: 4.5rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur: 420ms;
+}

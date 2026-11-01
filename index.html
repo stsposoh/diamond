@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hallmere — Cutters and jewellers</title>
+    <meta name="description" content="Hallmere cuts its own stones and sets them in its own work. Follow one diamond from 150 km below ground to the hand that wears it." />
+    <meta name="theme-color" content="#eceef1" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preload" as="font" type="font/woff2" href="./src/fonts/Supreme-Variable.woff2" crossorigin />
+    <link rel="preload" as="image" type="image/webp" href="./assets/photos/web/A-hero-room.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <script>
+      // Hides the hero until its entrance plays, before the first paint.
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('is-intro');
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#consultation">Skip to the consultation form</a>
+
+    <header class="site-nav">
+      <a class="site-nav__brand" href="#top" aria-label="Hallmere, back to top">Hallmere</a>
+      <a class="site-nav__cta" href="#consultation">Book a consultation</a>
+    </header>
+
+    <nav class="scale" aria-label="Chapters">
+      <ol class="scale__list">
+        <li><a class="scale__mark" href="#top" aria-current="true" aria-label="0 m, the stone"><span class="scale__address" data-depth>0 m</span><span class="scale__name" data-depth-name>The stone</span></a></li>
+        <li><a class="scale__mark" href="#origin"><span class="scale__address">−150 km</span><span class="scale__name">Origin</span></a></li>
+        <li><a class="scale__mark" href="#surface"><span class="scale__address">Surface</span><span class="scale__name">Selection</span></a></li>
+        <li><a class="scale__mark" href="#bench"><span class="scale__address">Bench</span><span class="scale__name">Cleave and cut</span></a></li>
+        <li><a class="scale__mark" href="#facets"><span class="scale__address">57</span><span class="scale__name">Facets</span></a></li>
+        <li><a class="scale__mark" href="#setting"><span class="scale__address">Setting</span><span class="scale__name">The mount</span></a></li>
+        <li><a class="scale__mark" href="#consultation"><span class="scale__address">Hand</span><span class="scale__name">Consultation</span></a></li>
+      </ol>
+      <span class="scale__probe" data-probe aria-hidden="true"></span>
+    </nav>
+
+    <main>
+      <section class="journey" data-journey aria-label="The life of one stone, from 150 kilometres down to the bench">
+        <div class="journey__marker" id="top"></div>
+        <div class="journey__marker" id="origin"></div>
+        <div class="journey__marker" id="surface"></div>
+        <div class="journey__marker" id="bench"></div>
+        <div class="journey__marker" id="facets"></div>
+        <div class="journey__marker" id="setting"></div>
+
+        <div class="journey__viewport">
+          <div class="journey__media" aria-hidden="true">
+            <video class="journey__frame" data-video="descent" muted playsinline preload="none" disablepictureinpicture poster="./assets/videos/stills/B1-descent-aerial-first.webp"></video>
+            <video class="journey__frame" data-video="loupe" muted playsinline preload="none" disablepictureinpicture poster="./assets/videos/stills/scrub/C-loupe-start.webp"></video>
+            <img class="journey__frame journey__frame--bench" data-frame="bench" src="./assets/photos/web/D-bench.webp" width="2400" height="1340" alt="" loading="lazy" />
+            <div class="journey__frame journey__frame--plain" data-frame="plain"><canvas class="journey__flecks" data-plain-flecks></canvas></div>
+            <video class="journey__frame" data-video="setting" muted playsinline preload="none" disablepictureinpicture poster="./assets/videos/stills/scrub/E-setting-start.webp"></video>
+          </div>
+          <div class="journey__fog" data-fog aria-hidden="true"></div>
+          <div class="journey__curtain" data-curtain aria-hidden="true"></div>
+          <div class="journey__veil" data-veil aria-hidden="true"></div>
+
+          <div class="hero" data-hero data-chapter="0">
+            <img class="hero__room" data-hero-room src="./assets/photos/web/A-hero-room.webp" width="2400" height="1340" alt="" fetchpriority="high" />
+            <div class="hero__wash" aria-hidden="true"></div>
+            <div class="hero__light" data-hero-light aria-hidden="true">
+              <div class="hero__pool" data-pool></div>
+              <canvas class="hero__glints" data-glints></canvas>
+            </div>
+            <canvas class="hero__flecks" data-flecks aria-hidden="true"></canvas>
+            <aside class="hero__awards" data-hero-copy aria-labelledby="awards-title">
+              <p class="hero__awards-title" id="awards-title">Recognition</p>
+              <ul class="hero__awards-list">
+                <li><span class="hero__awards-year">2025</span> Atelier of the Year <span class="hero__awards-by">Verrin Prize for Lapidary Arts</span></li>
+                <li><span class="hero__awards-year">2024</span> Best Round Brilliant <span class="hero__awards-by">Northvale Gem Guild</span></li>
+                <li><span class="hero__awards-year">2023</span> Master Cutter <span class="hero__awards-by">Ashgrove Craft Awards</span></li>
+              </ul>
+            </aside>
+            <div class="hero__cue" data-hero-copy aria-hidden="true">
+              <span>Scroll to descend</span>
+              <span class="hero__cue-line"></span>
+            </div>
+            <div class="hero__copy" data-hero-copy>
+              <h1 class="hero__title">We cut every stone we&nbsp;set.</h1>
+            </div>
+            <div class="hero__action" data-hero-copy>
+              <p class="hero__lede">Cutters and jewellers under one roof. Scroll to follow a single diamond from 150&nbsp;km below ground to the hand that wears it.</p>
+              <a class="button" href="#consultation">Book a private consultation</a>
+            </div>
+          </div>
+
+          <canvas class="stone" data-stone aria-hidden="true"></canvas>
+
+          <article class="scene scene--origin" data-scene="origin" data-chapter="1" aria-labelledby="origin-title">
+            <div class="scene__copy">
+              <h2 class="scene__title" id="origin-title">Three billion years, 150&nbsp;kilometres down.</h2>
+              <p class="scene__text">Carbon held at fifty thousand atmospheres and over a thousand degrees settles, atom by atom, into an octahedron. A volcanic pipe carried this one to the surface in a matter of hours.</p>
+            </div>
+          </article>
+
+          <article class="scene scene--surface" data-scene="surface" data-chapter="2" aria-labelledby="surface-title">
+            <div class="scene__copy">
+              <h2 class="scene__title" id="surface-title">Most rough goes back. We keep the few that hold a&nbsp;stone.</h2>
+              <p class="scene__text">Every crystal that reaches the atelier is read under northern light before anyone decides what it becomes. We map its grain and inclusions, then look for the brilliant hiding inside the skin.</p>
+            </div>
+          </article>
+
+          <article class="scene scene--bench" data-scene="bench" data-chapter="3" aria-labelledby="bench-title">
+            <div class="scene__copy">
+              <h2 class="scene__title" id="bench-title">The skin comes off. The stone was always&nbsp;there.</h2>
+              <p class="scene__text">The cutter who chose the crystal cleaves it, saws it and rounds the girdle by hand. Nothing is sent out; the stone never leaves the bench it was planned on.</p>
+            </div>
+          </article>
+
+          <article class="scene scene--facets" data-scene="facets" data-chapter="4" aria-labelledby="facets-title">
+            <div class="scene__copy">
+              <h2 class="scene__title" id="facets-title">Fifty-seven facets, each placed by&nbsp;hand.</h2>
+              <p class="scene__text">Thirty-three on the crown to gather light, twenty-four on the pavilion to send it back. Their angles decide how much white light the stone returns and how much it breaks into colour.</p>
+            </div>
+            <canvas class="facets__stone" data-facets-stone aria-hidden="true"></canvas>
+            <p class="facets__counter" aria-hidden="true"><span class="facets__count" data-facet-count>57</span><span class="facets__unit">facets</span></p>
+            <ul class="facets__parts" aria-label="Parts of a round brilliant">
+              <li class="facets__part" data-part="crown"><span class="facets__leader"></span>Crown</li>
+              <li class="facets__part" data-part="girdle"><span class="facets__leader"></span>Girdle</li>
+              <li class="facets__part" data-part="pavilion"><span class="facets__leader"></span>Pavilion</li>
+            </ul>
+          </article>
+
+          <article class="scene scene--setting" data-scene="setting" data-chapter="5" aria-labelledby="setting-title">
+            <div class="scene__copy">
+              <h2 class="scene__title" id="setting-title">The hands that cut it make its&nbsp;setting.</h2>
+              <p class="scene__text">The mount is drawn around the stone we just finished, not around a catalogue size. Four platinum claws, shaped to its girdle, close over it at the same bench.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="atelier" data-atelier aria-labelledby="atelier-title">
+        <div class="atelier__stage">
+          <div class="atelier__plane" data-depth="0.05"><div class="atelier__set"><img class="atelier__room" src="./assets/photos/web/G1-room.webp" width="2400" height="1340" alt="" loading="lazy" /></div></div>
+          <div class="atelier__plane" data-depth="0.15"><div class="atelier__set"><img class="atelier__cabinet" src="./assets/photos/web/G2-cabinet.webp" width="2040" height="860" alt="" loading="lazy" /></div></div>
+          <div class="atelier__plane" data-depth="0.2"><div class="atelier__set"><div class="atelier__rays"></div></div></div>
+          <div class="atelier__plane atelier__plane--title" data-depth="0.3" data-atelier-title>
+            <h2 class="atelier__title" id="atelier-title">Under one roof.</h2>
+            <p class="atelier__text">Cutters and jewellers at neighbouring benches. The stone never leaves the room.</p>
+          </div>
+          <div class="atelier__plane" data-depth="0.35"><div class="atelier__set"><img class="atelier__jeweller" src="./assets/photos/web/G3-jeweller.webp" width="990" height="1200" alt="A jeweller at her bench, seen from behind." loading="lazy" /></div></div>
+          <div class="atelier__plane" data-depth="0.42"><div class="atelier__set"><img class="atelier__cutter" src="./assets/photos/web/G4-cutter.webp" width="1080" height="1320" alt="A diamond cutter at his polishing wheel, seen from behind." loading="lazy" /></div></div>
+          <div class="atelier__plane" data-depth="1" data-atelier-near><div class="atelier__set"><img class="atelier__bench" src="./assets/photos/web/G5-bench.webp" width="2752" height="204" alt="" loading="lazy" /></div></div>
+          <div class="atelier__plane" data-depth="1" data-atelier-near><div class="atelier__set"><img class="atelier__lamp" src="./assets/photos/web/G6-lamp.webp" width="2080" height="1380" alt="" loading="lazy" /></div></div>
+          <div class="atelier__stone" data-atelier-zoom aria-hidden="true"><canvas data-atelier-stone></canvas></div>
+          <div class="atelier__veil" aria-hidden="true"></div>
+          <div class="journey__fog atelier__haze" data-atelier-haze aria-hidden="true"></div>
+          <div class="atelier__flash" data-atelier-flash aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="hand" id="consultation" data-chapter="6" aria-labelledby="hand-title">
+        <img class="hand__photo" src="./assets/photos/web/F-hand-ring.webp" width="2400" height="1340" alt="A hand wearing a platinum solitaire with a round brilliant diamond, resting on white plaster." loading="lazy" />
+        <div class="hand__panel">
+          <h2 class="hand__title" id="hand-title">Begin with a conversation.</h2>
+          <p class="hand__text">Tell us what the piece is for. A cutter and a jeweller will meet you at the atelier, with rough to look at.</p>
+          <form class="form" data-consult-form novalidate>
+            <div class="form__field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form__field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form__field">
+              <label for="f-occasion">Occasion</label>
+              <select id="f-occasion" name="occasion" required>
+                <option value="" selected disabled>Choose one</option>
+                <option>Engagement</option>
+                <option>Anniversary</option>
+                <option>A gift</option>
+                <option>An heirloom to reset</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="f-date">Preferred date</label>
+              <select id="f-date" name="date" required data-consult-dates>
+                <option value="" selected disabled>Choose a day</option>
+              </select>
+            </div>
+            <button class="button form__submit" type="submit">Request a consultation</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__brand">Hallmere</p>
+      <p>Atelier, 7 Quarry Lane, Hallmere</p>
+      <p class="site-footer__note">Demo project. Hallmere and everything about it is fictional.</p>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
